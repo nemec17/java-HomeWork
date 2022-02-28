@@ -39,7 +39,7 @@ public class tiktaktoe {
         boolean PlayerActive = true;
 
         while (PlayerActive) {
-            System.out.println("Ходит игрок, введите сначало номер строкими после номер столбца");
+            System.out.println("Ходит игрок, введите сначало номер строки, а после пробела или перевода строки, номер столбца");
 
             int x = sc.nextInt();
             int y = sc.nextInt();
@@ -49,7 +49,7 @@ public class tiktaktoe {
                     map[x - 1][y - 1] = "X";
                     PlayerActive = false;
                 } else System.out.println("Эта клетка занята!");
-            } else System.out.println("Давай выбирать поля внутри поля");
+            } else System.out.println("Давай выбирать поля внутри игры");
         }
     }
 
